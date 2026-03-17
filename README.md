@@ -27,16 +27,12 @@ GenAI requires strict boundaries in the enterprise. SYNAPSE-SC utilizes determin
 ```bash
 git clone [https://github.com/bheemreddypoojitha/synapse-sc.git](https://github.com/bheemreddypoojitha/synapse-sc.git)
 cd synapse-sc
-2. Install dependencies:
+**2. Install dependencies:**
 Bash
 pip install -r requirements.txt
-3. Setup Environment Variables:
+**3. Setup Environment Variables:**
 Create a .env file in the root directory and add your Groq API key:
-
-Plaintext
 GROQ_API_KEY=your_api_key_here
-4. Launch the Command Center:
-
-Bash
+**4. Launch the Command Center:**
 streamlit run app.py
 Click the "Initiate Autonomous Risk Scan" button in the UI to watch the agent swarm execute the workflow in real-time.
