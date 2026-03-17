@@ -3,10 +3,8 @@ from enterprise_tools import search_logistics_alerts, query_erp, execute_reroute
 from dotenv import load_dotenv
 import os
 
-# Load the API key from the .env file
 load_dotenv()
 
-# Initialize the blazing-fast Groq LLM using CrewAI's native engine
 groq_llm = LLM(
     model="groq/llama-3.3-70b-versatile",
     temperature=0.0
