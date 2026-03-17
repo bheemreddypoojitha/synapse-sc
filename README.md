@@ -25,7 +25,7 @@ GenAI requires strict boundaries in the enterprise. SYNAPSE-SC utilizes determin
 
 **1. Clone the repository:**
 ```bash
-git clone [https://github.com/bheemreddypoojitha/synapse-sc.git](https://github.com/bheemreddypoojitha/synapse-sc.git)
+git clone https://github.com/bheemreddypoojitha/synapse-sc.git
 cd synapse-sc
 2. Install dependencies:
 pip install -r requirements.txt
