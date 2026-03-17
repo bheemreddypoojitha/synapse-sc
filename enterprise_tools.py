@@ -3,8 +3,6 @@ import json
 
 @tool("Search Global Logistics Alerts")
 def search_logistics_alerts(query: str) -> str:
-    """Useful to search for real-time weather, strikes, or port closures. Input should be a region."""
-    # Mocking a real-time global logistics API
     mock_data = {
         "status": "CRITICAL ALERT",
         "location": "Port of Shenzhen, China",
@@ -15,7 +13,6 @@ def search_logistics_alerts(query: str) -> str:
 
 @tool("Query ERP Inventory Database")
 def query_erp(location: str) -> str:
-    """Queries the enterprise SAP/ERP system to find delayed inventory at a specific port. Input is the port name."""
     if "Shenzhen" in location:
         return json.dumps({
             "delayed_shipments": 14,
@@ -27,7 +24,6 @@ def query_erp(location: str) -> str:
 
 @tool("Execute Rerouting & Verify Guardrails")
 def execute_reroute(vendor_name: str, cost: int) -> str:
-    """Executes a logistics rerouting order. Fails if cost exceeds the $10,000 compliance guardrail. Inputs: vendor_name, cost."""
     # HARD CODED COMPLIANCE GUARDRAIL
     MAX_AUTONOMOUS_SPEND = 10000 
     
