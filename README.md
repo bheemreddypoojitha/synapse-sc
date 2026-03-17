@@ -34,10 +34,11 @@ pip install -r requirements.txt
 ```
 **3. Setup Environment Variables:**
 Create a .env file in the root directory and add your Groq API key:
+```env
 GROQ_API_KEY=your_api_key_here
-
+```
 **4. Launch the Command Center:**
 ```bash
 streamlit run app.py
 ```
-Click the "Initiate Autonomous Risk Scan" button in the UI to watch the agent swarm execute the workflow in real-time.
+Click the **"Initiate Autonomous Risk Scan"** button in the UI to watch the agent swarm execute the workflow in real-time.
