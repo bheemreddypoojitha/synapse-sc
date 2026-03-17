@@ -2,10 +2,8 @@ import streamlit as st
 import time
 from ai_swarm import run_synapse_swarm
 
-# --- UI Configuration ---
 st.set_page_config(page_title="SYNAPSE-SC | Enterprise Hub", layout="wide", page_icon="🌐")
 
-# Custom CSS for "Enterprise Dark Mode"
 st.markdown("""
     <style>
     .main {background-color: #0E1117;}
@@ -20,7 +18,6 @@ st.markdown("""
 st.title("🌐 SYNAPSE-SC")
 st.subheader("Autonomous Supply Chain Risk & Mitigation Engine")
 
-# --- Dashboard Metrics ---
 col1, col2, col3 = st.columns(3)
 with col1:
     st.markdown('<div class="metric-box"><h3>Active Supply Nodes</h3><h2>1,402</h2></div>', unsafe_allow_html=True)
@@ -31,17 +28,14 @@ with col3:
 
 st.divider()
 
-# --- The Demo Execution ---
 st.write("### 🧠 Multi-Agent Simulation")
 st.write("Initiate the AI swarm to scan global APIs, model ERP impact, and execute rerouting protocols.")
 
 if st.button("🚀 INITIATE AUTONOMOUS RISK SCAN", type="primary", use_container_width=True):
     
-    # Visual loading effect for the pitch video
     with st.status("Executing Multi-Agent Workflow...", expanded=True) as status:
         st.write("📡 **Agent 1 (Sentinel):** Pinging global weather and logistics APIs...")
         
-        # ACTUALLY RUN THE AI SWARM (This takes ~10 seconds)
         try:
             final_result = run_synapse_swarm()
             
