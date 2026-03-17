@@ -27,6 +27,7 @@ GenAI requires strict boundaries in the enterprise. SYNAPSE-SC utilizes determin
 ```bash
 git clone https://github.com/bheemreddypoojitha/synapse-sc.git
 cd synapse-sc
+```
 2. Install dependencies:
 pip install -r requirements.txt
 3. Setup Environment Variables:
